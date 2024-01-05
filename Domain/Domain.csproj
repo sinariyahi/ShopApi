@@ -7,11 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+    <Folder Include="Entities\Base\" />
+    <Folder Include="Entities\Blog\" />
+    <Folder Include="Entities\Catalog\" />
+    <Folder Include="Entities\Media\" />
+    <Folder Include="Entities\Support\" />
+    <Folder Include="Entities\Security\" />
+    <Folder Include="Entities\Payment\" />
   </ItemGroup>
 
 </Project>
