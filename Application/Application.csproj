@@ -19,7 +19,17 @@
     <Folder Include="Interfaces\Payment\" />
     <Folder Include="Interfaces\Order\" />
     <Folder Include="Interfaces\Shop\" />
-    <Folder Include="Services\" />
+    <Folder Include="Services\Base\" />
+    <Folder Include="Services\Blog\" />
+    <Folder Include="Services\Catalog\" />
+    <Folder Include="Services\Dashboard\" />
+    <Folder Include="Services\Media\" />
+    <Folder Include="Services\Support\" />
+    <Folder Include="Services\Sms\" />
+    <Folder Include="Services\Security\" />
+    <Folder Include="Services\PaymentGateway\" />
+    <Folder Include="Services\Payment\" />
+    <Folder Include="Services\Shop\" />
   </ItemGroup>
 
   <ItemGroup>
