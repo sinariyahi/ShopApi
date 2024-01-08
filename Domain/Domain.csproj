@@ -11,7 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\Base\" />
     <Folder Include="Entities\Catalog\" />
     <Folder Include="Entities\Media\" />
     <Folder Include="Entities\Support\" />
