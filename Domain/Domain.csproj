@@ -13,7 +13,6 @@
   <ItemGroup>
     <Folder Include="Entities\Support\" />
     <Folder Include="Entities\Security\" />
-    <Folder Include="Entities\Payment\" />
   </ItemGroup>
 
 </Project>
