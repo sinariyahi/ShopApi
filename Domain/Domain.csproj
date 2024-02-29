@@ -10,8 +10,4 @@
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Entities\Support\" />
-  </ItemGroup>
-
 </Project>
