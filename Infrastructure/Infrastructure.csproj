@@ -35,6 +35,7 @@
     <PackageReference Include="EPPlus" Version="7.0.10" />
     <PackageReference Include="Microsoft.AnalysisServices.AdomdClient.retail.amd64" Version="19.76.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.1" />
     <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.4.1" />
