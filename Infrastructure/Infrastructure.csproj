@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Blog\" />
     <Folder Include="Models\Catalog\" />
     <Folder Include="Models\ChartData\" />
     <Folder Include="Models\Common\" />
