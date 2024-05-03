@@ -16,7 +16,6 @@
     <Folder Include="Models\PaymentGateway\" />
     <Folder Include="Models\Payment\" />
     <Folder Include="Models\OrganizationUnit\" />
-    <Folder Include="Models\Shop\" />
     <Folder Include="Resources\" />
   </ItemGroup>
 
