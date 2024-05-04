@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Media\" />
     <Folder Include="Models\User\" />
     <Folder Include="Models\Support\" />
     <Folder Include="Models\Sms\" />
