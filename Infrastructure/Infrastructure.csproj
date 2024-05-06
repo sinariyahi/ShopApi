@@ -13,7 +13,6 @@
     <Folder Include="Models\Security\" />
     <Folder Include="Models\Project\" />
     <Folder Include="Models\PaymentGateway\" />
-    <Folder Include="Models\Payment\" />
     <Folder Include="Resources\" />
   </ItemGroup>
 
