@@ -12,7 +12,6 @@
     <Folder Include="Models\Sms\" />
     <Folder Include="Models\Security\" />
     <Folder Include="Models\Project\" />
-    <Folder Include="Models\PaymentGateway\" />
     <Folder Include="Resources\" />
   </ItemGroup>
 
