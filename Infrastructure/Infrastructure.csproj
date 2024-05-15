@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Models\User\" />
     <Folder Include="Models\Support\" />
-    <Folder Include="Models\Sms\" />
     <Folder Include="Resources\" />
   </ItemGroup>
 
