@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Entities.Security;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace Domain.Entities.Base
         public Guid Code { get; set; }
         public DateTime CreateDate { get; set; }
         public Guid? UserId { get; set; }
-       // public virtual User User { get; set; }
+        public virtual User User { get; set; }
         public bool? IsAdminUser { get; set; }
     }
 }
