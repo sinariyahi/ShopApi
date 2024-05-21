@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Common;
 
 namespace Domain.Entities.Base
 {
@@ -18,7 +19,7 @@ namespace Domain.Entities.Base
         [Required, MaxLength(256)]
         public string Title { get; set; }
 
-      //  public Province ProvinceId { get; set; }
+        public Province ProvinceId { get; set; }
         public bool IsActive { get; set; }
     }
 }
