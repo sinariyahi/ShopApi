@@ -20,10 +20,10 @@ namespace Domain.Entities.Base
         public string Description { get; set; }
         public DateTime CreateDate { get; set; }
         public string Link { get; set; }
-//        public virtual ICollection<SocialMediaAttachment> SocialMediaAttachments { get; set; }
+        public virtual ICollection<SocialMediaAttachment> SocialMediaAttachments { get; set; }
         public SocialMedia()
         {
- //           SocialMediaAttachments = new HashSet<SocialMediaAttachment>();
+            SocialMediaAttachments = new HashSet<SocialMediaAttachment>();
         }
 
     }
