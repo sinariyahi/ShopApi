@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Domain.Entities.Security;
 
 namespace Domain.Entities.Base
 {
@@ -30,8 +31,8 @@ namespace Domain.Entities.Base
         public string Description { get; set; }
         public DateTime? CreateDate { get; set; }
         public Guid? UserId { get; set; }
-        // public virtual User User { get; set; }
+        public virtual User User { get; set; }
         public int? OrganizationUnitId { get; set; }
-        //   public virtual Role OrganizationUnit { get; set; }
+        public virtual Role OrganizationUnit { get; set; }
     }
 }
