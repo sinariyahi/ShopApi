@@ -24,21 +24,21 @@ namespace Domain.Entities.Catalog
         public virtual Category Parent { get; set; }
         public DateTime CreateDate { get; set; }
         public string Remark { get; set; }
-        //public virtual ICollection<CategoryFeature> Features { get; set; }
-       // public virtual ICollection<CategoryMainFeature> CategoryMainFeatures { get; set; }
+        public virtual ICollection<CategoryFeature> Features { get; set; }
+        public virtual ICollection<CategoryMainFeature> CategoryMainFeatures { get; set; }
 
-     //   public virtual ICollection<CategoryAttachment> CategoryAttachments { get; set; }
-   //     public virtual ICollection<MainFeatureAttachment> MainFeatureAttachments { get; set; }
+        public virtual ICollection<CategoryAttachment> CategoryAttachments { get; set; }
+        public virtual ICollection<MainFeatureAttachment> MainFeatureAttachments { get; set; }
 
- //       public virtual ICollection<Product> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
         public int? SortOrder { get; set; }
         public Category()
         {
-            //Features = new HashSet<CategoryFeature>();
-            //CategoryAttachments = new HashSet<CategoryAttachment>();
-            //Products = new HashSet<Product>();
-            //CategoryMainFeatures = new HashSet<CategoryMainFeature>();
-            //MainFeatureAttachments = new HashSet<MainFeatureAttachment>();
+            Features = new HashSet<CategoryFeature>();
+            CategoryAttachments = new HashSet<CategoryAttachment>();
+            Products = new HashSet<Product>();
+            CategoryMainFeatures = new HashSet<CategoryMainFeature>();
+            MainFeatureAttachments = new HashSet<MainFeatureAttachment>();
 
         }
     }
