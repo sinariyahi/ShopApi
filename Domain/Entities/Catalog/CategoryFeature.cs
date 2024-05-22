@@ -14,7 +14,7 @@ namespace Domain.Entities.Catalog
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
         public int FeatureId { get; set; }
-      //  public virtual Feature Feature { get; set; }
+        public virtual Feature Feature { get; set; }
         public int? SortOrder { get; set; }
     }
 
@@ -25,7 +25,7 @@ namespace Domain.Entities.Catalog
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
         public int FeatureId { get; set; }
-        //public virtual Feature Feature { get; set; }
+        public virtual Feature Feature { get; set; }
         public int? SortOrder { get; set; }
     }
 }
