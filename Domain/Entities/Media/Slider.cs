@@ -27,11 +27,11 @@ namespace Domain.Entities.Media
 
 
 
-       // public virtual ICollection<SliderAttachment> SliderAttachments { get; set; }
+        public virtual ICollection<SliderAttachment> SliderAttachments { get; set; }
 
         public Slider()
         {
-         //   SliderAttachments = new HashSet<SliderAttachment>();
+            SliderAttachments = new HashSet<SliderAttachment>();
 
         }
     }
