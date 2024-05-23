@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Common;
 
 namespace Domain.Entities.Media
 {
@@ -22,19 +23,19 @@ namespace Domain.Entities.Media
         public string SeoTitle { get; set; }
         public string SeoDescription { get; set; }
         public string VideoLink { get; set; }
-        //public VideoSource VideoSource { get; set; }
+        public VideoSource VideoSource { get; set; }
         public int VideoCategoryId { get; set; }
         public string ShortDescription { get; set; }
 
-        //public virtual VideoCategory VideoCategory { get; set; }
+        public virtual VideoCategory VideoCategory { get; set; }
 
-        //public virtual ICollection<VideoAttachment> VideoAttachments { get; set; }
-        //public virtual ICollection<VideoCoverAttachment> VideoCoverAttachments { get; set; }
+        public virtual ICollection<VideoAttachment> VideoAttachments { get; set; }
+        public virtual ICollection<VideoCoverAttachment> VideoCoverAttachments { get; set; }
 
         public Video()
         {
-            //VideoAttachments = new HashSet<VideoAttachment>();
-            //VideoCoverAttachments = new HashSet<VideoCoverAttachment>();
+            VideoAttachments = new HashSet<VideoAttachment>();
+            VideoCoverAttachments = new HashSet<VideoCoverAttachment>();
 
         }
     }
