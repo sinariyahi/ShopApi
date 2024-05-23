@@ -5,6 +5,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Common;
+using Domain.Entities.Security;
 
 namespace Domain.Entities.Catalog
 {
@@ -14,7 +16,7 @@ namespace Domain.Entities.Catalog
         [Key]
         public Guid Id { get; set; }
         public Guid CustomerId { get; set; }
-        //public virtual Customer Customer { get; set; }
+        public virtual Customer Customer { get; set; }
 
         public int? KoponId { get; set; }
         public virtual Kopon Kopon { get; set; }
@@ -31,7 +33,7 @@ namespace Domain.Entities.Catalog
         public int KoponPercent { get; set; }
         public long KoponAmount { get; set; }
         public long FinalAmount { get; set; }
-        //public OrderStatus OrderStatus { get; set; }
+        public OrderStatus OrderStatus { get; set; }
         public string OrderStatusRemark { get; set; }
 
         public int? CityId { get; set; }
@@ -52,15 +54,15 @@ namespace Domain.Entities.Catalog
         public string OrderReturnByCustomerRemark { get; set; }
         public DateTime? OrderReturnByCustomerDate { get; set; }
 
-       // public virtual ICollection<OrderDetail> OrderDetails { get; set; }
-       // public virtual ICollection<OrderLog> OrderLogs { get; set; }
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+        public virtual ICollection<OrderLog> OrderLogs { get; set; }
 
-        //public Order()
-        //{
-        //    OrderDetails = new HashSet<OrderDetail>();
-        //    OrderLogs = new HashSet<OrderLog>();
+        public Order()
+        {
+            OrderDetails = new HashSet<OrderDetail>();
+            OrderLogs = new HashSet<OrderLog>();
 
-        //}
+        }
 
     }
 }
