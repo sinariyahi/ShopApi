@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Common;
 
 namespace Domain.Entities.Catalog
 {
@@ -15,7 +16,7 @@ namespace Domain.Entities.Catalog
         public Guid Id { get; set; }
         public Guid OrderId { get; set; }
         public virtual Order Order { get; set; }
-      //  public OrderStatus OrderStatus { get; set; }
+        public OrderStatus OrderStatus { get; set; }
         public string OrderStatusRemark { get; set; }
 
         public DateTime CreateDate { get; set; }
