@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Common;
 
 namespace Domain.Entities.Media
 {
@@ -21,18 +22,18 @@ namespace Domain.Entities.Media
         public int? SortOrder { get; set; }
         public string SeoTitle { get; set; }
         public string Link { get; set; }
-        //public PositionPlace PositionPlace { get; set; }
+        public PositionPlace PositionPlace { get; set; }
 
         public DateTime FromDate { get; set; }
         public DateTime ToDate { get; set; }
 
 
 
-        //public virtual ICollection<BannerAttachment> BannerAttachments { get; set; }
+        public virtual ICollection<BannerAttachment> BannerAttachments { get; set; }
 
         public Banner()
         {
-         //   BannerAttachments = new HashSet<BannerAttachment>();
+            BannerAttachments = new HashSet<BannerAttachment>();
 
         }
     }
