@@ -6,6 +6,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Common;
+using Domain.Entities.Media;
 
 namespace Domain.Entities.Catalog
 {
@@ -24,7 +26,7 @@ namespace Domain.Entities.Catalog
         public string Remark { get; set; }
         public string SeoDescription { get; set; }
         public string SeoTitle { get; set; }
-     //   public SaleStatus? SaleStatus { get; set; }
+       public SaleStatus? SaleStatus { get; set; }
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
         public int BrandId { get; set; }
@@ -44,12 +46,12 @@ namespace Domain.Entities.Catalog
         public int? APIQuantity { get; set; }
 
         public virtual Brand Brand { get; set; }
-       // public virtual ICollection<ProductFeatureValue> FeatureValues { get; set; }
-        //public virtual ICollection<ProductUsage> ProductUsages { get; set; }
-        //public virtual ICollection<ProductAttachment> ProductAttachments { get; set; }
-       // public virtual ICollection<ProductCoverAttachment> ProductCoverAttachments { get; set; }
+        public virtual ICollection<ProductFeatureValue> FeatureValues { get; set; }
+        public virtual ICollection<ProductUsage> ProductUsages { get; set; }
+        public virtual ICollection<ProductAttachment> ProductAttachments { get; set; }
+        public virtual ICollection<ProductCoverAttachment> ProductCoverAttachments { get; set; }
         public virtual ICollection<FinancialProduct> FinancialProducts { get; set; }
-        //public virtual ICollection<VideoProduct> VideoProducts { get; set; }
+        public virtual ICollection<VideoProduct> VideoProducts { get; set; }
         public virtual ICollection<ArticleProduct> ArticleProducts { get; set; }
         public DateTime? UpdateApiDate { get; set; }
 
@@ -58,13 +60,13 @@ namespace Domain.Entities.Catalog
 
         public Product()
         {
-            //FeatureValues = new HashSet<ProductFeatureValue>();
-            //ProductUsages = new HashSet<ProductUsage>();
-            //ProductAttachments = new HashSet<ProductAttachment>();
-            //ProductCoverAttachments = new HashSet<ProductCoverAttachment>();
-            //FinancialProducts = new HashSet<FinancialProduct>();
-            //ArticleProducts = new HashSet<ArticleProduct>();
-            //VideoProducts = new HashSet<VideoProduct>();
+            FeatureValues = new HashSet<ProductFeatureValue>();
+            ProductUsages = new HashSet<ProductUsage>();
+            ProductAttachments = new HashSet<ProductAttachment>();
+            ProductCoverAttachments = new HashSet<ProductCoverAttachment>();
+            FinancialProducts = new HashSet<FinancialProduct>();
+            ArticleProducts = new HashSet<ArticleProduct>();
+            VideoProducts = new HashSet<VideoProduct>();
 
         }
     }
