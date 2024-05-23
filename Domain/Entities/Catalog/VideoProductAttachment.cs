@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Common;
 
 namespace Domain.Entities.Catalog
 {
@@ -41,7 +42,7 @@ namespace Domain.Entities.Catalog
         public string FileExtension { get; set; }
         public string FileContentType { get; set; }
         public string FileSize { get; set; }
-     //   public FileType FileType { get; set; }
+        public FileType FileType { get; set; }
         public string FilePath { get; set; }
         public DateTime CreateDate { get; set; }
 
