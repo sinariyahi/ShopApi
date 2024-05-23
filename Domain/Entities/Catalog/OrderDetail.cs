@@ -14,7 +14,7 @@ namespace Domain.Entities.Catalog
         [Key]
         public int Id { get; set; }
         public int ProductId { get; set; }
- //       public virtual Product Product { get; set; }
+        public virtual Product Product { get; set; }
 
         public Guid OrderId { get; set; }
 
