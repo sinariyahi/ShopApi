@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Common;
 
 namespace Domain.Entities.Security
 {
@@ -16,7 +17,7 @@ namespace Domain.Entities.Security
         public Guid Id { get; set; }
         [Required, MaxLength(128)]
         public Guid UserId { get; set; }
-       // public User User { get; set; }
+        public User User { get; set; }
         public DateTime CreateDate { get; set; }
         public bool IsActive { get; set; }
         public string Address { get; set; }
@@ -24,7 +25,7 @@ namespace Domain.Entities.Security
 
         public City City { get; set; }
 
-     //   public Province? Province { get; set; }
+       public Province? Province { get; set; }
 
         public int? GoldIranCityId { get; set; }
 
