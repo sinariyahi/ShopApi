@@ -25,7 +25,7 @@ namespace Domain.Entities.Security
         public bool? IsActive { get; set; }
         public bool? IsTopLevel { get; set; }
         public int? PermissionGroupId { get; set; }
-     //   public PermissionGroup PermissionGroup { get; set; }
-     //   public ICollection<RolePermission> RolePermissions { get; set; }
+        public PermissionGroup PermissionGroup { get; set; }
+       public ICollection<RolePermission> RolePermissions { get; set; }
     }
 }
