@@ -1,4 +1,5 @@
 ﻿using Domain.Entities.Catalog;
+using Domain.Entities.Security;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -14,7 +15,7 @@ namespace Domain.Entities.Payment
         public Guid Id { get; set; }
         public long Amount { get; set; }
         public Guid UserId { get; set; }
-     //   public virtual User User { get; set; }
+       public virtual User User { get; set; }
         public string OrderValue { get; set; }
         public DateTime OrderDate { get; set; }
         public string PaymentResult { get; set; }
