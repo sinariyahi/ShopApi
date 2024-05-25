@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Common;
 
 namespace Domain.Entities.Security
 {
@@ -28,12 +29,12 @@ namespace Domain.Entities.Security
         public int? ParentId { get; set; }
         public virtual Role Parent { get; set; }
 
-     //   public OrganizationLevel? OrganizationLevel { get; set; }
+       public OrganizationLevel? OrganizationLevel { get; set; }
 
         public bool IsActive { get; set; }
 
-       // public ICollection<UserRole> UserRoles { get; set; }
-      //  public ICollection<RolePermission> RolePermissions { get; set; }
+        public ICollection<UserRole> UserRoles { get; set; }
+        public ICollection<RolePermission> RolePermissions { get; set; }
         public ICollection<MenuRole> MenuRoles { get; set; }
 
     }
