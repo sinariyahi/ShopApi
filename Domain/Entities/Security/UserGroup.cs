@@ -17,12 +17,12 @@ namespace Domain.Entities.Security
         public string Title { get; set; }
         public DateTime CreateDate { get; set; }
         public bool IsActive { get; set; }
-    //    public virtual ICollection<UserGroupMember> UserGroupMembers { get; set; }
+        public virtual ICollection<UserGroupMember> UserGroupMembers { get; set; }
         public virtual ICollection<UserGroupAction> UserGroupActions { get; set; }
 
         public UserGroup()
         {
-  //          UserGroupMembers = new HashSet<UserGroupMember>();
+            UserGroupMembers = new HashSet<UserGroupMember>();
             UserGroupActions = new HashSet<UserGroupAction>();
         }
 
