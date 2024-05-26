@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices.JavaScript;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Common;
 
 namespace Domain.Entities.Security
 {
@@ -21,6 +22,6 @@ namespace Domain.Entities.Security
         public DateTime ActionTime { get; set; }
         public bool Status { get; set; }
 
-        // public SmsType SmsType { get; set; }
+         public SmsType SmsType { get; set; }
     }
 }
