@@ -17,12 +17,12 @@ namespace Domain.Entities.Security
 
         public Guid UserGroupId { get; set; }
         public UserGroup UserGroup { get; set; }
-        //public virtual ICollection<UserGroupAction> UserGroupActions { get; set; }
+        public virtual ICollection<UserGroupAction> UserGroupActions { get; set; }
 
-        //public UserGroupMember()
-        //{
-        //    UserGroupActions = new HashSet<UserGroupAction>();
-        //}
+        public UserGroupMember()
+        {
+            UserGroupActions = new HashSet<UserGroupAction>();
+        }
 
     }
 }
