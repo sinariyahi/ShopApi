@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Common;
 
 namespace Domain.Entities.Support
 {
@@ -16,7 +17,7 @@ namespace Domain.Entities.Support
         public Guid Id { get; set; }
         [Required, MaxLength(250)]
         public string Title { get; set; }
-     //   public CartableType? CartableType { get; set; }
+        public CartableType? CartableType { get; set; }
         public int CartableId { get; set; }
         public virtual Cartable Cartable { get; set; }
         public DateTime CreateDate { get; set; }
