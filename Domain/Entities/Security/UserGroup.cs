@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Common;
 
 namespace Domain.Entities.Security
 {
@@ -32,15 +33,15 @@ namespace Domain.Entities.Security
     public class UserGroupAction
     {
         public int Id { get; set; }
-//        public CompanyRequestWorkFlowStatus CompanyRequestWorkFlowStatus { get; set; }
+        public CompanyRequestWorkFlowStatus CompanyRequestWorkFlowStatus { get; set; }
         public Guid UserGroupId { get; set; }
         public virtual UserGroup UserGroup { get; set; }
-        //public virtual ICollection<UserGroupMember> UserGroupMembers { get; set; }
+        public virtual ICollection<UserGroupMember> UserGroupMembers { get; set; }
 
-        //public UserGroupAction()
-        //{
-        //    UserGroupMembers = new HashSet<UserGroupMember>();
+        public UserGroupAction()
+        {
+            UserGroupMembers = new HashSet<UserGroupMember>();
 
-        //}
+        }
     }
 }
