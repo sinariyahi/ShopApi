@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Common;
 
 namespace Domain.Entities.Support
 {
@@ -17,9 +18,9 @@ namespace Domain.Entities.Support
         public Guid Id { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
-       // public CompanyQuestionStatus CompanyQuestionStatus { get; set; }
+        public CompanyQuestionStatus CompanyQuestionStatus { get; set; }
         public byte[] AttachmentFile { get; set; }
-     //   public ICollection<UserAnswer> UserAnswers { get; set; }
+        public ICollection<UserAnswer> UserAnswers { get; set; }
         public DateTime CreateDate { get; set; }
         public Guid CreateUserId { get; set; }
         public virtual User CreateUser { get; set; }
