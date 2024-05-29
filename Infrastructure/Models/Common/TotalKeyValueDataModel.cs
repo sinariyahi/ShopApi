@@ -13,4 +13,5 @@ namespace Infrastructure.Models.Common
         public string Code { get; set; }
         public bool IsOrganizationUnit { get; set; } = false;
     }
+
 }
