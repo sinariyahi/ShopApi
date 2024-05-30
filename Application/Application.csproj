@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\Base\" />
     <Folder Include="Interfaces\Blog\" />
     <Folder Include="Interfaces\Catalog\" />
     <Folder Include="Interfaces\Dashboard\" />
