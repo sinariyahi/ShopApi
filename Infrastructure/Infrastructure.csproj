@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Common\GlobalExceptionHandling\" />
     <Folder Include="Resources\" />
   </ItemGroup>
 
