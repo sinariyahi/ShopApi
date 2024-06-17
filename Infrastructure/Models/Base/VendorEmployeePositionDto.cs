@@ -8,5 +8,11 @@ namespace Infrastructure.Models.Base
 {
     public class VendorEmployeePositionDto
     {
+        public int Id { get; set; }
+
+        public string Title { get; set; }
+
+        public bool IsActive { get; set; }
+        public string IsActiveTitle { get; set; }
     }
 }
