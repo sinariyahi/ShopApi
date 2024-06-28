@@ -11,7 +11,6 @@
     <Folder Include="Interfaces\Sms\" />
     <Folder Include="Interfaces\Security\" />
     <Folder Include="Interfaces\PaymentGateway\" />
-    <Folder Include="Interfaces\Payment\" />
     <Folder Include="Services\Base\" />
     <Folder Include="Services\Blog\" />
     <Folder Include="Services\Catalog\" />
