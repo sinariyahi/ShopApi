@@ -68,5 +68,14 @@ namespace Infrastructure.Resources {
                 return ResourceManager.GetString("CommunicationError", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The update was completed successfully.
+        /// </summary>
+        internal static string UpdateSuccessful {
+            get {
+                return ResourceManager.GetString("UpdateSuccessful", resourceCulture);
+            }
+        }
     }
 }

@@ -120,4 +120,7 @@
   <data name="CommunicationError" xml:space="preserve">
     <value>Communication error</value>
   </data>
+  <data name="UpdateSuccessful" xml:space="preserve">
+    <value>The update was completed successfully</value>
+  </data>
 </root>
