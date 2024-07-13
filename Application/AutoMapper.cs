@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application
 {
-    public static class ApplicationInstaller
+    public class AutoMapper
     {
-
     }
 }
