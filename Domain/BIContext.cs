@@ -59,7 +59,7 @@ namespace Domain
         public DbSet<City> Cities { get; set; }
         public DbSet<NewsLetter> NewsLetters { get; set; }
 
-       // public DbSet<EmailTemplate> EmailTemplates { get; set; }
+        public DbSet<EmailTemplate> EmailTemplates { get; set; }
         public DbSet<Currency> Currencies { get; set; }
         public DbSet<DeliveryLocation> DeliveryLocations { get; set; }
         public DbSet<Page> Pages { get; set; }
