@@ -10,7 +10,7 @@ namespace Application.Interfaces.PaymentGateway
 {
     public interface IMellatPaymentService
     {
-        //Task<ShopActionResult<MellatGatewaySubmissionFormDto>> SalePayment(SalePaymentRequestModel model);
-        //Task<ShopActionResult<bool>> SalePaymentConfirm(MellatGatewayResponseDto model);
+        Task<ShopActionResult<GatewaySubmissionFormDto>> SalePayment(SalePaymentRequestModel model);
+        Task<ShopActionResult<bool>> SalePaymentConfirm(GatewayResponseDto model);
     }
 }
