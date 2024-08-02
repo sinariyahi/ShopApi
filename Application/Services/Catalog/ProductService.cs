@@ -19,6 +19,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using ExcelDataReader;
+using Application.Interfaces.Shop;
 
 namespace Application.Services.Catalog
 {
@@ -27,7 +29,7 @@ namespace Application.Services.Catalog
         private readonly BIContext context;
         private readonly IGenericQueryService<Product> productQueryService;
         private readonly IGenericQueryService<UserLogSearchForProduct> userLogSearchForProductQueryService;
-        private readonly IGoldiranService goldiranService;
+        private readonly IShopService shopService;
 
         private readonly IFileService _fileService;
         private readonly string _filePath;
@@ -37,7 +39,7 @@ namespace Application.Services.Catalog
             IGenericQueryService<Product> productQueryService,
             IGenericQueryService<UserLogSearchForProduct> userLogSearchForProductQueryService,
 
-                  IFileService fileService, IOptions<Configs> options, IGoldiranService goldiranService,
+                  IFileService fileService, IOptions<Configs> options, IShopService shopService,
             ILogger<ProductService> logger)
         {
             this.context = context;
@@ -47,19 +49,19 @@ namespace Application.Services.Catalog
             _fileService = fileService;
             _filePath = options.Value.FilePath;
             _configs = options.Value;
-            this.goldiranService = goldiranService;
+            this.shopService = shopService;
             this.logger = logger;
         }
 
         #region Admin - Product
-        public async Task<GoldiranActionResult<int>> Add(ProductDto model)
+        public async Task<ShopActionResult<int>> Add(ProductDto model)
         {
-            var result = new GoldiranActionResult<int>();
+            var result = new ShopActionResult<int>();
 
             if (context.Products.Any(a => a.Code == model.Code))
             {
                 result.IsSuccess = false;
-                result.Message = MessagesFA.CodeExists;
+                //result.Message = MessagesFA.CodeExists;
                 return result;
             }
 
@@ -91,7 +93,7 @@ namespace Application.Services.Catalog
             if (context.Products.Any(a => a.EnName == model.EnName))
             {
                 result.IsSuccess = false;
-                result.Message = MessagesFA.EnNameAlreadyExists;
+              //  result.Message = MessagesFA.EnNameAlreadyExists;
                 return result;
 
             }
@@ -127,26 +129,26 @@ namespace Application.Services.Catalog
 
 
             result.IsSuccess = true;
-            result.Message = MessagesFA.SaveSuccessful;
+            //result.Message = MessagesFA.SaveSuccessful;
             return result;
         }
-        public async Task<GoldiranActionResult<int>> Delete(int id)
+        public async Task<ShopActionResult<int>> Delete(int id)
         {
-            var result = new GoldiranActionResult<int>();
+            var result = new ShopActionResult<int>();
 
             var item = new Product { Id = id };
             context.Remove(item);
             await context.SaveChangesAsync();
 
             result.IsSuccess = true;
-            result.Message = MessagesFA.DeleteSuccessful;
+            //result.Message = MessagesFA.DeleteSuccessful;
             return result;
         }
 
 
-        public async Task<GoldiranActionResult<ProductDto>> GetById(int id)
+        public async Task<ShopActionResult<ProductDto>> GetById(int id)
         {
-            var result = new GoldiranActionResult<ProductDto>();
+            var result = new ShopActionResult<ProductDto>();
 
             var item = await context.Products
                 //.Include(q => q.ProductAttachments)
@@ -1910,7 +1912,7 @@ namespace Application.Services.Catalog
             if (item.GetInventoryFromApi == true)
             {
                 logger.LogInformation("call GetPartBalanceInfo with code:{0}", item.Code);
-                var callApiResult = await goldiranService.GetPartBalanceInfo(item.Code);
+                var callApiResult = await shopService.GetPartBalanceInfo(item.Code);
                 logger.LogInformation("GetPartBalanceInfo Result with code:{0}, Result{1}", item.Code, callApiResult);
 
                 if (callApiResult.IsSuccess == true)
