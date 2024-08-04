@@ -13,7 +13,6 @@
     <Folder Include="Services\Security\" />
     <Folder Include="Services\PaymentGateway\" />
     <Folder Include="Services\Payment\" />
-    <Folder Include="Services\Shop\" />
   </ItemGroup>
 
   <ItemGroup>
