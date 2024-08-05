@@ -8,5 +8,6 @@ namespace Application.Services.Shop
 {
     public class ShopService
     {
+
     }
 }
