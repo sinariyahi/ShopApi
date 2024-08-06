@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\Media\" />
     <Folder Include="Services\Support\" />
     <Folder Include="Services\Sms\" />
     <Folder Include="Services\Security\" />
