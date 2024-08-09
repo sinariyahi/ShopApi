@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Services\Support\" />
     <Folder Include="Services\Sms\" />
-    <Folder Include="Services\Security\" />
   </ItemGroup>
 
   <ItemGroup>
