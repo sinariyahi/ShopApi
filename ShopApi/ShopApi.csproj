@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\ApplicationConfig\" />
     <Folder Include="Files\" />
   </ItemGroup>
 
