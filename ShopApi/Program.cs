@@ -1,5 +1,6 @@
 using Infrastructure.Common;
 using Microsoft.Extensions.DependencyInjection;
+using ShopApi.Installers;
 
 var builder = WebApplication.CreateBuilder(new WebApplicationOptions
 {
@@ -16,14 +17,14 @@ builder.Services.Configure<Configs>(builder.Configuration.GetSection("Configs"))
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-//builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen();
 
 //builder.Services.AddApplicaiton();
 //builder.Services.AddCore();
 //builder.Services.AddInfrastructure();
-//builder.Services.AddSwagger();
-//builder.Services.AddJWT();
-//builder.Services.AddCustomCors();
+builder.Services.AddSwagger();
+builder.Services.AddJWT();
+builder.Services.AddCustomCors();
 //builder.Services.AddControllers().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
 #region AutoMapper
@@ -39,11 +40,11 @@ builder.Services.AddSingleton(mapper);
 builder.Services.AddMemoryCache();
 
 var app = builder.Build();
-//if (app.Environment.IsDevelopment())
-//{
-//    app.UseSwagger();
-//    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BI.API v1"));
-//}
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "BI.API v1"));
+}
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
