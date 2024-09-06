@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\BaseInfo\" />
+    <Folder Include="Controllers\BaseInfo\City\" />
     <Folder Include="Files\" />
   </ItemGroup>
 
