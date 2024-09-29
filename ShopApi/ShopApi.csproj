@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Blog\Article\" />
     <Folder Include="Controllers\Blog\ArticleCategory\" />
     <Folder Include="Files\" />
   </ItemGroup>
