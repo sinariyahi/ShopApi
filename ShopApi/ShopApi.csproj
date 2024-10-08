@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Catalog\Order\" />
     <Folder Include="Files\" />
   </ItemGroup>
 
