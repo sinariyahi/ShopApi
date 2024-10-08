@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Catalog\FeatureCategory\" />
     <Folder Include="Files\" />
   </ItemGroup>
 
