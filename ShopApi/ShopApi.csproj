@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\CustomReport\" />
     <Folder Include="Files\" />
   </ItemGroup>
 
