@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Application.Interfaces.Catalog
 {
-    internal interface ISymbolService
+    public interface ISymbolService
     {
         Task<ShopActionResult<List<SymbolDto>>> GetList(GridQueryModel model = null);
         Task<ShopActionResult<int>> Add(SymbolDto model);
