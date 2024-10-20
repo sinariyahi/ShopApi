@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Catalog\Symbol\" />
     <Folder Include="Files\" />
   </ItemGroup>
 
