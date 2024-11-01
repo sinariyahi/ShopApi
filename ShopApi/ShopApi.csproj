@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Media\" />
+    <Folder Include="Controllers\Media\Banner\" />
     <Folder Include="Files\" />
   </ItemGroup>
 
