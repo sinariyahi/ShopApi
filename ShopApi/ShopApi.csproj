@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Media\Banner\" />
     <Folder Include="Controllers\Media\VideoCategory\" />
     <Folder Include="Controllers\Media\Video\" />
     <Folder Include="Controllers\Media\Slider\" />
