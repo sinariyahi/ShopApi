@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers\Media\VideoCategory\" />
-    <Folder Include="Controllers\Media\Video\" />
     <Folder Include="Files\" />
   </ItemGroup>
 
