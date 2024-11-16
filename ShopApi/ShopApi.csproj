@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Security\" />
     <Folder Include="Files\" />
   </ItemGroup>
 
