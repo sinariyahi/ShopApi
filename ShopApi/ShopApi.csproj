@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Controllers\Sms\" />
     <Folder Include="Files\" />
   </ItemGroup>
 
