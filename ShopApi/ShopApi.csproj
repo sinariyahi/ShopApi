@@ -10,6 +10,7 @@
     <Folder Include="Controllers\Support\ContactForm\" />
     <Folder Include="Controllers\Support\CooperationForm\" />
     <Folder Include="Controllers\Support\LetMeKnow\" />
+    <Folder Include="Controllers\Support\UserNewsLetter\" />
     <Folder Include="Files\" />
   </ItemGroup>
 
