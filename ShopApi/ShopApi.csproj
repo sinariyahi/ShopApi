@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Support\" />
+    <Folder Include="Controllers\Support\ContactForm\" />
     <Folder Include="Files\" />
   </ItemGroup>
 
