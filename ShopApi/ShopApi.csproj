@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="Controllers\Support\ContactForm\" />
+    <Folder Include="Controllers\Support\CooperationForm\" />
     <Folder Include="Files\" />
   </ItemGroup>
 
