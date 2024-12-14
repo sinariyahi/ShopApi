@@ -22,7 +22,7 @@ namespace Infrastructure.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Messages {
+    public class Messages {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Infrastructure.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Infrastructure.Resources.Messages", typeof(Messages).Assembly);
@@ -51,7 +51,7 @@ namespace Infrastructure.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,9 +61,18 @@ namespace Infrastructure.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to کد امنیتی ارسال صحیح نمی باشد.
+        /// </summary>
+        public static string CaptchaInvalid {
+            get {
+                return ResourceManager.GetString("CaptchaInvalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Communication error.
         /// </summary>
-        internal static string CommunicationError {
+        public static string CommunicationError {
             get {
                 return ResourceManager.GetString("CommunicationError", resourceCulture);
             }
@@ -72,7 +81,7 @@ namespace Infrastructure.Resources {
         /// <summary>
         ///   Looks up a localized string similar to The update was completed successfully.
         /// </summary>
-        internal static string UpdateSuccessful {
+        public static string UpdateSuccessful {
             get {
                 return ResourceManager.GetString("UpdateSuccessful", resourceCulture);
             }
