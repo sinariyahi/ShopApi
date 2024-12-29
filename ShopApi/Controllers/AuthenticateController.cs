@@ -220,9 +220,9 @@ namespace ShopApi.Controllers
         }
 
         [HttpGet("SendSMS")]
-        public async Task<IActionResult> SendSMS(string? mobile = "09125715530")
+        public async Task<IActionResult> SendSMS(string? mobile = "09362322511")
         {
-            var result = await smsUtility.Send(mobile, "سلام...فروشگاه تامین پلاس...درم بخت");
+            var result = await smsUtility.Send(mobile, "سلام ... سینا ریاحی هستم");
             return Ok(new { ResultCode = result });
         }
     }
