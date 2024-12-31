@@ -17,7 +17,6 @@ namespace ShopApi.Controllers
         private readonly IAuthenticationService _authenticationService;
         private readonly ICustomerService customerService;
         private readonly SMSUtility smsUtility;
-
         private readonly Configs configs;
         readonly IMemoryCache cache;
         public AuthenticateController(IAuthenticationService authenticationService, IOptions<Configs> options, IMemoryCache cache, ICustomerService customerService, SMSUtility smsUtility)
