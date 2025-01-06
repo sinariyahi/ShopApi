@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="Files\Base\SocialMediaAttachments\" />
     <Folder Include="Files\Blog\ArticleAttachments\" />
+    <Folder Include="Files\Catalog\" />
   </ItemGroup>
 
   <ItemGroup>
