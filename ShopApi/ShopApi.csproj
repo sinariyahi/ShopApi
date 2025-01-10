@@ -12,6 +12,7 @@
     <Folder Include="Files\Catalog\BrandAttachments\" />
     <Folder Include="Files\Catalog\CategoryAttachments\" />
     <Folder Include="Files\Catalog\MainFeatureAttachments\" />
+    <Folder Include="Files\Catalog\ProductAttachments\" />
   </ItemGroup>
 
   <ItemGroup>
