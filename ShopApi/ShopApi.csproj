@@ -13,7 +13,7 @@
     <Folder Include="Files\Catalog\CategoryAttachments\" />
     <Folder Include="Files\Catalog\MainFeatureAttachments\" />
     <Folder Include="Files\Catalog\ProductAttachments\" />
-    <Folder Include="Files\Media\" />
+    <Folder Include="Files\Media\BannerAttachments\" />
   </ItemGroup>
 
   <ItemGroup>
