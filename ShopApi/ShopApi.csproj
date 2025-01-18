@@ -17,7 +17,7 @@
     <Folder Include="Files\Media\VideoCoverAttachments\" />
     <Folder Include="Files\Media\VideoAttachments\" />
     <Folder Include="Files\Media\SliderAttachments\" />
-    <Folder Include="Files\Sourcing\" />
+    <Folder Include="Files\Sourcing\CompanyInfoAttachment\" />
   </ItemGroup>
 
   <ItemGroup>
