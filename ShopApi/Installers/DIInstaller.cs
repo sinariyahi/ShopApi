@@ -14,7 +14,7 @@ namespace ShopApi.Installers
         {
             services.AddCors(options =>
             {
-                options.AddPolicy("GoldiranAPI",
+                options.AddPolicy("ShopAPI",
                   builder =>
                   {
                       builder.WithOrigins("*");
@@ -64,13 +64,13 @@ namespace ShopApi.Installers
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "Goldiran API",
-                    Description = "Goldiran App API - Version01",
-                    TermsOfService = new Uri("https://www.goldiran.ir/"),
+                    Title = "Shop API",
+                    Description = "Shop App API - Version01",
+                    TermsOfService = new Uri("https://www.Shop.com/"),
                     License = new OpenApiLicense
                     {
-                        Name = "Goldiran",
-                        Url = new Uri("https://www.goldiran.ir/"),
+                        Name = "Shop",
+                        Url = new Uri("https://www.Shop.com/"),
                     }
                 });
 
