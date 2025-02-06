@@ -1,4 +1,5 @@
 using Application;
+using Domain;
 using Infrastructure.Common;
 using Microsoft.Extensions.DependencyInjection;
 using ShopApi.Installers;
@@ -21,7 +22,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddApplicaiton();
-//builder.Services.AddCore();
+builder.Services.AddCore();
 //builder.Services.AddInfrastructure();
 builder.Services.AddSwagger();
 builder.Services.AddJWT();
