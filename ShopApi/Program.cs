@@ -23,7 +23,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddApplicaiton();
 builder.Services.AddCore();
-//builder.Services.AddInfrastructure();
+builder.Services.AddInfrastructure();
 builder.Services.AddSwagger();
 builder.Services.AddJWT();
 builder.Services.AddCustomCors();
