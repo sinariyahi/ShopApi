@@ -1,5 +1,6 @@
 using Application;
 using Domain;
+using Infrastructure;
 using Infrastructure.Common;
 using Microsoft.Extensions.DependencyInjection;
 using ShopApi.Installers;
