@@ -1,0 +1,1739 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="M:API.Controllers.ApplicationConfig.ApplicationConfigController.Get">
+            <summary>
+              برگرداندن یک آیتم 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ApplicationConfig.ApplicationConfigController.Update(Infrastructure.Models.ApplicationConfigDto)">
+            <summary>
+              ویرایش آیتم 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.BaseInfo.CityController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست  City ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.CityController.Add(Infrastructure.Models.Base.CityInputModel)">
+            <summary>
+                ثبت City
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.CityController.Update(Infrastructure.Models.Base.CityInputModel)">
+            <summary>
+              ویرایش City 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.BaseInfo.CityController.GetById(System.Int32)">
+            <summary>
+              برگرداندن یک  City 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.CityController.Delete(System.Int32)">
+            <summary>
+              حذف  City
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.JobOpportunityController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+              لیست فرصت های شغلی
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.JobOpportunityController.GetById(System.Int32)">
+            <summary>
+              برگرداندن  فرصت های شغلی
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.JobOpportunityController.Add(Infrastructure.Models.JobOpportunityDto)">
+            <summary>
+                ثبت فرصت های شغلی جدید
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.JobOpportunityController.Update(Infrastructure.Models.JobOpportunityDto)">
+            <summary>
+              ویرایشفرصت های شغلی 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.JobOpportunityController.Delete(System.Int32)">
+            <summary>
+              حذف فرصت های شغلی
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.NewsLetterController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+              لیست خبر نامه ها
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.NewsLetterController.GetUserRegisterNewsLetter(Infrastructure.Common.GridQueryModel)">
+            <summary>
+              لیست اعضا ثبت نام شده در خبر نامه ها
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.NewsLetterController.GetById(System.Int32)">
+            <summary>
+              برگرداندن خبر نامه 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.NewsLetterController.Add(Infrastructure.Models.NewsLetterDto)">
+            <summary>
+                ثبت خبر نامه جدید
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.NewsLetterController.Add(Infrastructure.Models.UserNewsLetterDto)">
+            <summary>
+               ثبت عضویت در خبرنامه
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.NewsLetterController.Update(Infrastructure.Models.NewsLetterDto)">
+            <summary>
+              ویرایش خبر نامه 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.NewsLetterController.Delete(System.Int32)">
+            <summary>
+              حذف خبر نامه
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.OriginController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+              لیست منطقه یا کشور
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.OriginController.GetById(System.Int32)">
+            <summary>
+              برگرداندن منطقه یا کشور 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.OriginController.Add(Infrastructure.Models.OriginDto)">
+            <summary>
+                ثبت منطقه یا کشور جدید
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.OriginController.Update(Infrastructure.Models.OriginDto)">
+            <summary>
+              ویرایش منطقه یا کشور 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.BaseInfo.Origin.OriginController.Delete(System.Int32)">
+            <summary>
+              حذف منطقه یا کشور
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.BaseInfo.PageController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست  page ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.PageController.GetById(System.Guid)">
+            <summary>
+              برگرداندن یک  page 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.PageController.Add(Infrastructure.Models.Base.PageInputModel)">
+            <summary>
+                ثبت  page جدید 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.PageController.Update(Infrastructure.Models.Base.PageInputModel)">
+            <summary>
+              ویرایش  page
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.BaseInfo.PageController.Delete(System.Guid)">
+            <summary>
+              حذف  page 
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.BaseInfo.SocialMediaController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست  page ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.SocialMediaController.Add(Infrastructure.Models.Base.SocialMediaInputModel)">
+            <summary>
+                ثبت SocialMedia
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.SocialMediaController.Update(Infrastructure.Models.Base.SocialMediaInputModel)">
+            <summary>
+              ویرایش SocialMedia 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.BaseInfo.SocialMediaController.GetById(System.Int32)">
+            <summary>
+              برگرداندن یک  SocialMedia 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.SocialMediaController.Delete(System.Int32)">
+            <summary>
+              حذف  SocialMedia
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.BaseInfo.ContactFormController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست  همکاری با ما ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.ContactFormController.GetById(System.Int32)">
+            <summary>
+              برگرداندن جزییات همکاری با ما 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.CooperationFormController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست  همکاری با ما ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.BaseInfo.CooperationFormController.GetById(System.Int32)">
+            <summary>
+              برگرداندن جزییات همکاری با ما 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetSmsType">
+            <summary>
+              نوع sms ارسال شده
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetVideos(System.Int32)">
+            <summary>
+            ویدیو ها  Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetComboInfo">
+            <summary>
+             های شاخص Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetPagesLinkTypes">
+            <summary>
+             PagesLinkType Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetProducts(System.Int32)">
+            <summary>
+            محصولات   Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetCities(Infrastructure.Common.Province)">
+            <summary>
+            GetCities   Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetArticles(System.Int32)">
+            <summary>
+            مقالات  Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetSaleStatus">
+            <summary>
+              وضعیت فروش Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetOrderStatus">
+            <summary>
+              وضعیت سفارش Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetShowStatus">
+            <summary>
+              وضعیت نمایش Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetPositionPlace">
+            <summary>
+              PositionPlace Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetUserOpinionType">
+            <summary>
+              GetUserOpinionType Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetUserTypes">
+            <summary>
+              GetUserTypes Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetDeliveryType">
+            <summary>
+             روش ارسال Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetProvince">
+            <summary>
+              استان Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetCountType">
+            <summary>
+              نوع تعداد Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetDisciplines">
+            <summary>
+            بخش ها Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetSymbols">
+             <summary>
+            ها Symbol  Dropdown 
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetVideoCategory">
+            <summary>
+            VideoCategory  Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetVideoSource">
+            <summary>
+            GetVideoSource  Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetBrands">
+             <summary>
+            ها Brand  Dropdown 
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetFeatureCategory">
+            <summary>
+             GetFeatureCategory
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetArticleCategory">
+            <summary>
+             GetArticleCategory
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.ComboInfoController.GetDisciplinesById(System.Int32)">
+            <summary>
+               get Disciplines in roles with parentId - بخش id  برگرداندن امور با  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.UserComboInfoController.GetProductsByCategoryIdForUser(System.Int32)">
+            <summary>
+            محصولات   Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.UserComboInfoController.GetJobOpportunities">
+             <summary>
+            فرصت های شغلی  Dropdown 
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.UserComboInfoController.GetBrands">
+             <summary>
+            ها Brand  Dropdown 
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.UserComboInfoController.GetCities(Infrastructure.Common.Province)">
+            <summary>
+            GetCities   Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.UserComboInfoController.GetProvince">
+            <summary>
+            استانها  Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.ComboInfo.UserComboInfoController.GetProductCategory">
+             <summary>
+            ها ProductCategory  Dropdown 
+             </summary>
+             <returns></returns>
+             
+        </member>
+        <member name="M:API.Controllers.ComboInfo.UserComboInfoController.GetAllProductsForUser">
+            <summary>
+            Get All Products  Dropdown 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserPageController.GetByTitle(System.String)">
+            <summary>
+              برگرداندن یک صفحه 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserPageController.GetAllLink">
+            <summary>
+              برگرداندن لیست id 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserPageController.GetListUserPages">
+            <summary>
+              برگرداندن لیست 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserArticleCategoryController.GetById(System.Int32)">
+            <summary>
+              برگرداندن یک مقاله 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserArticleCategoryController.GetUserList">
+            <summary>
+              برگرداندن یک مقاله 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ArticleController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست مقاله ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ArticleController.GetById(System.Int32)">
+            <summary>
+              برگرداندن یک مقاله 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ArticleController.Add(Infrastructure.Models.Catalog.ArticleDto)">
+            <summary>
+                ثبت کالا مقاله 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ArticleController.Update(Infrastructure.Models.Catalog.ArticleDto)">
+            <summary>
+              ویرایش مقاله 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ArticleController.Delete(System.Int32)">
+            <summary>
+              حذف مقاله 
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserArticleController.GetAllId">
+            <summary>
+             لیست مقاله ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserArticleController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست مقاله ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserArticleController.GetLastArticle">
+            <summary>
+             چند مقاله اخر  مقاله ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserArticleController.GetById(System.Int32)">
+            <summary>
+              برگرداندن یک مقاله 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.GetListUserLogSearchForProduct(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست  جستجوی کاربران برای محصولات 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست کالا ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.GetListForExcel">
+            <summary>
+             لیست کالا ها به صورت خروجی اکسل 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.ImportPriceListWithExcel(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            آپلود فایل قیمت محصولات
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.GetListUserLogSearchForExcel">
+            <summary>
+             لیست تاریخچه جستجو ... ها به صورت خروجی اکسل 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.GetListWithCategory(System.Int32)">
+            <summary>
+             لیست کالاها براساس کد گروه
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.GetById(System.Int32)">
+            <summary>
+              برگرداندن یک کالا 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.GetArticleProductById(System.Int32)">
+            <summary>
+              برگرداندن مقالات مشابه یک کالا 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.AddArticleProduct(Infrastructure.Models.Catalog.ArticleProductInputDto)">
+            <summary>
+                ثبت مقالات مشابه برای یک کالا  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.GetVideoProductById(System.Int32)">
+            <summary>
+              برگرداندن ویدیوها مشابه یک کالا 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.AddVideoProduct(Infrastructure.Models.Catalog.VideoProductInputDto)">
+            <summary>
+                ثبت ویدیوها مشابه برای یک کالا  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.GetSimilarProductById(System.Int32)">
+            <summary>
+              برگرداندن کالاهای مشابه یک کالا 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.AddSimilarProduct(Infrastructure.Models.Catalog.SimilarProductInputDto)">
+            <summary>
+                ثبت کالاهای مشابه برای یک کالا  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.GetFinancialProductList(System.Int32)">
+            <summary>
+              برگرداندن وضعیت مالی یک کالا 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.GetFinancialProductById(System.Int32)">
+            <summary>
+              برگرداندن وضعیت مالی یک کالا 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.UpdateFinancialProduct(Infrastructure.Models.Catalog.FinancialProductDto)">
+            <summary>
+                ویرایش وضعیت مالی برای یک کالا  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.GetDeliveryProductById(System.Int32)">
+            <summary>
+              برگرداندن وضعیت ارسال    
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.UpdateDeliveryProduct(Infrastructure.Models.Catalog.DeliveryProductDto)">
+            <summary>
+                ویرایش وضعیت ارسال برای یک کالا  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.AddDeliveryProduct(Infrastructure.Models.Catalog.DeliveryProductDto)">
+            <summary>
+                ویرایش وضعیت ارسال برای یک کالا  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.GetDeliveryProduct(Infrastructure.Models.Catalog.DeliveryProductFilterDto)">
+            <summary>
+              برگرداندن وضعیت ارسال یک کالا 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.DeleteDeliveryProduct(System.Int32)">
+            <summary>
+              حذف وضعیت ارسال برای یک کالا 
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.GetProductAttachment(System.Int32)">
+            <summary>
+              برگرداندن فایل های یک کالا 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.UpdateProductAttachment(Infrastructure.Models.Catalog.ProductAttachmentInputDto)">
+            <summary>
+                ثبت فایل برای  کالا  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.Add(Infrastructure.Models.Catalog.ProductDto)">
+            <summary>
+                ثبت کالا جدید 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.Update(Infrastructure.Models.Catalog.ProductDto)">
+            <summary>
+              ویرایش کالا 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.DeleteAttachment(System.Guid)">
+            <summary>
+              حذف تصویر کالا 
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.AddFavoriteProduct(Infrastructure.Models.Catalog.FavoriteProductModel)">
+            <summary>
+                اضافه کردن به لیست علاقه مندی ها  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.GetAllFavoriteProduct">
+            <summary>
+                 بر گرداندن لیست علاقه مندی ها  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.ProductController.GetByIdFavoriteProduct(System.Int32)">
+            <summary>
+                 بر گرداندن لیست علاقه مندی ها  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserProductController.GetTopNewProductList(System.Int32)">
+            <summary>
+              برگرداندن جدیدترین محصولات 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserProductController.GetSpecialOfferProductList(System.Int32)">
+            <summary>
+              برگرداندن محصولات پیشنهاد ویژه 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserProductController.GetTopSaleProductList(System.Int32)">
+            <summary>
+              برگرداندن پرفروش ترین محصولات 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserProductController.GetTopVisitedProductList(System.Int32)">
+            <summary>
+              برگرداندن پر بازدید ترین محصولات 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserProductController.GetUserSimilarProductByTitle(System.String)">
+            <summary>
+              برگرداندن  محصولات مشابه 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserProductController.GetSimilarData(System.Int32)">
+            <summary>
+              برگرداندن  اطلاعات  مشابه 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserProductController.GetSpecialOfferProductCount">
+            <summary>
+              برگرداندن  تعداد محصولات  فروش ویژه
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserProductController.GetProductsForParentItemsMegaMenu(Infrastructure.Common.GridQueryModel)">
+            <summary>
+              برگرداندن  محصولات برای مگا منو  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserProductController.GetUserList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+              برگرداندن  محصولات  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserProductController.GetProductDetail(System.Int32)">
+            <summary>
+              برگرداندن جزئیات یک محصول  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserProductController.GetProductDetail(System.String)">
+            <summary>
+              برگرداندن جزئیات یک محصول  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.UserProductController.GetAllTitle">
+            <summary>
+              برگرداندن id محصولات  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.GoldiranController.GetBasicData(System.Int32,System.Int32)">
+            <summary>
+             لیست استان - شهر - منطقه
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.GoldiranController.GetPartInfo(System.String)">
+            <summary>
+             اطلاعات قیمت و موجودی کالا
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Product.GoldiranController.GetPartInfo(System.Int32,System.Int32,System.String)">
+            <summary>
+             محله
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.UserSocialMediaController.GetUserList(System.Int32)">
+            <summary>
+              برگرداندن  SocialMediaController 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.BrandController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+              لیست برند
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.BrandController.GetById(System.Int32)">
+            <summary>
+              برگرداندن برند 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.BrandController.GetBrandProductsForDashboard">
+            <summary>
+              برگرداندن برند بر اساس محصولات 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.BrandController.Add(Infrastructure.Models.Catalog.BrandInputModel)">
+            <summary>
+                ثبت برند
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.BrandController.Update(Infrastructure.Models.Catalog.BrandInputModel)">
+            <summary>
+              ویرایش برند 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.BrandController.Delete(System.Int32)">
+            <summary>
+              حذف برند
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.UserBrandController.GetUserList(System.Int32)">
+            <summary>
+              برگرداندن برند ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.UserBrandController.GetBrandMenu">
+            <summary>
+              برگرداندن برند ها با محصولات برای منو 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.UserBrandController.GetAllBrandMegaMenu">
+            <summary>
+              برگرداندن برند ها با محصولات برای فیلتر 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.UserBrandController.GetUserListByProductCategoryId(System.String)">
+            <summary>
+               برگرداندن برند یک productCategory 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.UserBrandController.GetUserProductCategoryByBrandId(System.Int32)">
+            <summary>
+               برگرداندن برند یک قطعه 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.UserBrandController.GetUserProductCategoryByBrandTitle(System.String)">
+            <summary>
+               برگرداندن برند یک قطعه 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.UserContactFormController.Add(Infrastructure.Models.Base.ContactFormInputModel)">
+            <summary>
+                ثبت فرم همکاری با ما
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.UserCooperationFormController.Add(Infrastructure.Models.Base.CooperationFormInputModel)">
+            <summary>
+                ثبت فرم همکاری با ما
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.LetMeKnowController.Add(Infrastructure.Models.UserLetMeKnowDto)">
+            <summary>
+              خبر بده 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.LetMeKnowController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست  افرادی که گفتن به من خبر بده ! 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.LetMeKnowController.GetListForExcel">
+            <summary>
+             لیست افراد ب من خبر بده به صورت خروجی اکسل 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.UserLetMeKnowController.Add(Infrastructure.Models.UserLetMeKnowDto)">
+            <summary>
+              خبر بده 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Brand.UserNewsLetterController.Add(Infrastructure.Models.UserNewsLetterDto)">
+            <summary>
+               ثبت عضویت در خبرنامه
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.ArticleCategoryController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست گروه بندی مقاله ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.ArticleCategoryController.GetById(System.Int32)">
+            <summary>
+              برگرداندن یک گروه بندی مقاله 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.ArticleCategoryController.Add(Infrastructure.Models.Catalog.ArticleCategoryDto)">
+            <summary>
+                ثبت گروه بندی مقاله جدید 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.ArticleCategoryController.Update(Infrastructure.Models.Catalog.ArticleCategoryDto)">
+            <summary>
+              ویرایش گروه بندی مقاله 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.ArticleCategoryController.Delete(System.Int32)">
+            <summary>
+              حذف گروه بندی مقاله 
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.ProductCategoryController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست گروه بندی کالا ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.ProductCategoryController.Search(Infrastructure.Models.Catalog.SearchInputDto)">
+            <summary>
+             جستجو لیست گروه بندی کالا ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.ProductCategoryController.GetById(System.Int32)">
+            <summary>
+              برگرداندن یک گروه بندی کالا 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.ProductCategoryController.Add(Infrastructure.Models.Catalog.ProductCategoryDto)">
+            <summary>
+                ثبت گروه بندی کالا جدید 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.ProductCategoryController.Update(Infrastructure.Models.Catalog.ProductCategoryDto)">
+            <summary>
+              ویرایش گروه بندی کالا 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.ProductCategoryController.Delete(System.Int32)">
+            <summary>
+              حذف گروه بندی کالا 
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.ProductCategoryController.GetTree(System.Nullable{System.Int32})">
+            <summary>
+             نمایش گروه ها به صورت درختواره
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.ProductCategoryController.GetFeatures(System.Int32)">
+            <summary>
+             نمایش ویژگی های یک گروه
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.ProductCategoryController.GetFeaturesForFilter(System.Int32)">
+            <summary>
+             نمایش ویژگی های یک گروه برای جستجو
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.ProductCategoryController.GetProductCategoryForDashboard">
+            <summary>
+              برگرداندن آمار گروه بندی ها برای داشبورد 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.UserProductCategoryController.GetUserList(System.Int32)">
+            <summary>
+              برگرداندن   گروه بندی کالا برای اسلایدر 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.UserProductCategoryController.GetUserAllList">
+            <summary>
+              برگرداندن گروه بندی کالا  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.UserProductCategoryController.GetCategoriesForMegaMenu">
+            <summary>
+              برگرداندن  گروه بندی کالا 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.UserProductCategoryController.GetFeaturesForSearch(System.Int32)">
+            <summary>
+              برگرداندن ویژگیها برای  گروه بندی کالا   
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.UserProductCategoryController.GetSubCategoryByCategoryAndBrand(System.String,System.String)">
+            <summary>
+               برگرداندن گروه محصول  category     
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.UserProductCategoryController.GetFeaturesBySubCategoryIdAndBrand(System.String,System.String,System.String)">
+            <summary>
+               برگرداندن گروه محصول sub category     
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.UserProductCategoryController.GetFeaturesByCategoryAndBrand(System.String,System.String)">
+            <summary>
+              برگرداندن ویژگیهای یک گروه محصول    
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.UserProductCategoryController.GetFeatureOptionByCategoryId(System.Int32)">
+            <summary>
+              برگرداندن ویژگیهای  option گروه محصول     
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.UserProductCategoryController.GetCategoryByParentId(System.String)">
+            <summary>
+                گروه محصولات و برند ها      
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.UserProductCategoryController.GetUserByParentId(System.Int32,System.String)">
+            <summary>
+             level 2 برگرداندن   گروه بندی کالا برای اسلایدر 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.UserProductCategoryController.GetUserById(System.Int32)">
+            <summary>
+             برگرداندن   گروه بندی کالا برای اسلایدر 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.UserProductCategoryController.GetCategoryWithBrands(System.String)">
+            <summary>
+             برگرداندن   گروه بندی کالا بر اساس برند ها  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.UserProductCategoryController.GetFeatureOptionByCategory(System.String)">
+            <summary>
+             برگرداندن ویژگی های یک  محصولات   
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.ProductCategory.UserProductCategoryController.GetFeaturesByTitle(System.String)">
+            <summary>
+             برگرداندن ویژگی های یک  گروه محصول   
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.FeatureCategory.FeatureCategoryController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+              لیست FeatureCategory
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.FeatureCategory.FeatureCategoryController.GetById(System.Int32)">
+            <summary>
+              برگرداندن FeatureCategory 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.FeatureCategory.FeatureCategoryController.Add(Infrastructure.Models.Catalog.FeatureCategoryDto)">
+            <summary>
+                ثبت FeatureCategory جدید
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.FeatureCategory.FeatureCategoryController.Update(Infrastructure.Models.Catalog.FeatureCategoryDto)">
+            <summary>
+              ویرایش FeatureCategory 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Catalog.FeatureCategory.FeatureCategoryController.Delete(System.Int32)">
+            <summary>
+              حذف FeatureCategory
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Catalog.Feature.FeatureController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست ویژگی ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Feature.FeatureController.GetById(System.Int32)">
+            <summary>
+              برگرداندن یک ویژگی 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Feature.FeatureController.GetByFeaturesCategoryId(System.Nullable{System.Int32})">
+             <summary>
+            FeaturesCategoryId  برگرداندن یک ویژگی توسط  
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Feature.FeatureController.Add(Infrastructure.Models.Catalog.FeatureDto)">
+            <summary>
+                ثبت ویژگی جدید 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Feature.FeatureController.Update(Infrastructure.Models.Catalog.FeatureDto)">
+            <summary>
+              ویرایش ویژگی 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Catalog.Feature.FeatureController.Delete(System.Int32)">
+            <summary>
+              حذف ویژگی 
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Catalog.Kopon.KoponController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست Kopon 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Kopon.KoponController.GetById(System.Int32)">
+            <summary>
+              برگرداندن Kopon 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Kopon.KoponController.Add(Infrastructure.Models.Catalog.KoponDto)">
+            <summary>
+                ثبت Kopon 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Kopon.KoponController.Update(Infrastructure.Models.Catalog.KoponDto)">
+            <summary>
+              ویرایش Kopon  
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Catalog.Kopon.KoponController.Delete(System.Int32)">
+            <summary>
+              حذف Kopon 
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Catalog.Order.OrderController.GetList(Infrastructure.Models.Catalog.OrderFilterDto)">
+            <summary>
+             لیست Order 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Order.OrderController.GetListForExcel">
+            <summary>
+             لیست درخواست ها به صورت خروجی اکسل 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Order.OrderController.GetById(System.String)">
+            <summary>
+              برگرداندن Order 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Order.OrderController.Update(Infrastructure.Models.Catalog.OrderInputDto)">
+            <summary>
+              ویرایش Order  
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Catalog.Order.UserOrderController.CheckKopon(System.String)">
+            <summary>
+                چک کردن کوپن 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Order.UserOrderController.AddOrder(Infrastructure.Models.Catalog.UserOrderDto)">
+            <summary>
+                  ثبت درخواست 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Order.UserOrderController.ReturnOrderByCustomer(Infrastructure.Models.Catalog.ReturnOrderInputDto)">
+            <summary>
+                  مرجوع کردن درخواست  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Order.UserOrderController.GetDetailById">
+            <summary>
+               جزئیات سفارش 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Symbol.SymbolController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+              لیست Symbol
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Symbol.SymbolController.GetById(System.Int32)">
+            <summary>
+              برگرداندن Symbol 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Symbol.SymbolController.GetTree(System.Nullable{System.Int32})">
+            <summary>
+              برگرداندن SymbolTree
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Symbol.SymbolController.Add(Infrastructure.Models.SymbolDto)">
+            <summary>
+                ثبت Symbol جدید
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Catalog.Symbol.SymbolController.Update(Infrastructure.Models.SymbolDto)">
+            <summary>
+              ویرایش Symbol 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Catalog.Symbol.SymbolController.Delete(System.Int32)">
+            <summary>
+              حذف Symbol
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Project.DashboardController.GetCountData">
+            <summary>
+            تعداد اپشن ها
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.File.FileController.GetById(System.Int32,Infrastructure.Common.CompanyType)">
+            <summary>
+              برگرداندن Archive Media 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.BannerController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست  banner ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.BannerController.GetById(System.Int32)">
+            <summary>
+              برگرداندن یک  banner 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.BannerController.Add(Infrastructure.Models.Catalog.BannerDto)">
+            <summary>
+                ثبت  banner جدید 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.BannerController.Update(Infrastructure.Models.Catalog.BannerDto)">
+            <summary>
+              ویرایش  banner
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Media.BannerController.Delete(System.Int32)">
+            <summary>
+              حذف  banner 
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Media.Video.UserBannerController.GetUserList(Infrastructure.Common.PositionPlace)">
+            <summary>
+             لیست  banner  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.Video.UserVideoController.GetAllId">
+            <summary>
+             لیست ویدیو  ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.Video.UserVideoController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست ویدیو ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.Video.UserVideoController.GetLastVideo">
+            <summary>
+             چند مقاله اخر  ویدیو ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.Video.UserVideoController.GetById(System.Int32)">
+            <summary>
+              برگرداندن یک مقاله 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.SliderController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست  Slider ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.SliderController.GetById(System.Int32)">
+            <summary>
+              برگرداندن یک  Slider 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.SliderController.Add(Infrastructure.Models.Catalog.SliderDto)">
+            <summary>
+                ثبت  Slider جدید 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.SliderController.Update(Infrastructure.Models.Catalog.SliderDto)">
+            <summary>
+              ویرایش  Slider
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Media.SliderController.Delete(System.Int32)">
+            <summary>
+              حذف  Slider 
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Media.VideoCategory.UserVideoCategoryController.GetById(System.Int32)">
+            <summary>
+              برگرداندن یک ویدیو 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.VideoCategory.UserVideoCategoryController.GetUserList">
+            <summary>
+              لیست گروه بندی ویدیو 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.VideoCategoryController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست گروه بندی ویدیو ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.VideoCategoryController.GetById(System.Int32)">
+            <summary>
+              برگرداندن یک گروه بندی ویدیو 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.VideoCategoryController.Add(Infrastructure.Models.Catalog.VideoCategoryDto)">
+            <summary>
+                ثبت گروه بندی ویدیو جدید 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.VideoCategoryController.Update(Infrastructure.Models.Catalog.VideoCategoryDto)">
+            <summary>
+              ویرایش گروه بندی ویدیو
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Media.VideoCategoryController.Delete(System.Int32)">
+            <summary>
+              حذف گروه بندی ویدیو 
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Media.VideoController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست  ویدیو ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.VideoController.GetById(System.Int32)">
+            <summary>
+              برگرداندن یک  ویدیو 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.VideoController.Add(Infrastructure.Models.Catalog.VideoDto)">
+            <summary>
+                ثبت  ویدیو جدید 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Media.VideoController.Update(Infrastructure.Models.Catalog.VideoDto)">
+            <summary>
+              ویرایش  ویدیو
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Media.VideoController.Delete(System.Int32)">
+            <summary>
+              حذف  ویدیو 
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.PaymentGateway.CheckoutController.MellatPaymentGatewayConfirm(Infrastructure.Models.PaymentGateway.MellatGatewayResponseDto)">
+            <summary>
+               دریافت داده های ارسالی از درگاه پرداخت، پس از پرداخت توسط کاربر
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Payment.UserPaymentController.GetUserAllPayments(Infrastructure.Models.Payment.UserPaymentFilterDto)">
+            <summary>
+              برگرداندن تاریخچه پرداخت ها 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Payment.UserPaymentController.GetUserAllPaymentsForUser">
+            <summary>
+              برگرداندن تاریخچه پرداخت های یک کاربر 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Payment.UserPaymentController.AddUserPayment(Infrastructure.Models.Payment.UserPaymentDto)">
+            <summary>
+               درخواست ثبت پرداخت
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.CustomerController.AddCustomer(BIDashboard.Dtos.User.CustomerInputModel)">
+            <summary>
+                ثبت مشتری جدید 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.CustomerController.UpdateCustomer(BIDashboard.Dtos.User.CustomerInputModel)">
+            <summary>
+                ویرایش مشتری جدید 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.CustomerController.UpdateCustomerByUser(BIDashboard.Dtos.User.CustomerInputModel)">
+            <summary>
+                ویرایش مشتری توسط خود کاربر 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.CustomerController.UpdateCustomerInfoByUser(BIDashboard.Dtos.User.CustomerInputModel)">
+            <summary>
+                ویرایش مشتری توسط خود ارسال محصول برای کاربر 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.CustomerController.GetCustomers(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست مشتریان 
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:API.Controllers.Security.CustomerController.GetCustomerById(System.Guid)" -->
+        <!-- Badly formed XML comment ignored for member "M:API.Controllers.Security.CustomerController.GetCustomerByUser" -->
+        <member name="M:API.Controllers.Security.MenuController.GetMenu">
+            <summary>
+              منو
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.MenuController.GetMenuAccessForUser">
+            <summary>
+              دسترسی منوهای کاربر
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.RoleController.GetRole(Infrastructure.Common.GridQueryModel)">
+            <summary>
+              Role لیست 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.RoleController.GetById(System.Int32)">
+            <summary>
+              برگرداندن یک نقش 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.RoleController.Add(Infrastructure.Models.User.RoleDto)">
+            <summary>
+                ثبت نقش جدید 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.RoleController.Update(Infrastructure.Models.User.RoleDto)">
+            <summary>
+              ویرایش نقش 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Security.RoleController.Delete(System.Int32)">
+            <summary>
+              حذف نقش 
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Security.RoleController.GetTree(System.Nullable{System.Int32})">
+            <summary>
+             نمایش نقش ها به صورت درختواره
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Security.RoleController.GetRolePermissions(System.Int32)">
+            <summary>
+             لیست همه دسترسی ها به همراه دسترسی های نقش جاری
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Security.RoleController.UpdateRolePermissions(System.Int32,System.Collections.Generic.List{Infrastructure.Models.User.RolePermissionDto})">
+            <summary>
+             بروزرسانی دسترسی های یک نقش
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Security.UserController.GetListForCombo">
+            <summary>
+             لیست کاربران برای کومبو
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Security.UserController.GetUsersInfoForCombo">
+            <summary>
+             لیست کاربران برای کومبو
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Security.UserController.GetUser(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست کاربران 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.UserController.GetUserById(System.Guid)">
+            <summary>
+              برگرداندن یک کاربر 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.UserController.GetCurrentUser">
+            <summary>
+              برگرداندن اطلاعات کاربر جاری 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.UserController.GetEmailSignuature">
+            <summary>
+              برگرداندن امضای ایمیل کاربر جاری 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.UserController.AddUser(BIDashboard.Dtos.User.UserInputModel)">
+            <summary>
+                ثبت کاربر جدید 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.UserController.UpdateUser(BIDashboard.Dtos.User.UserInputModel)">
+            <summary>
+              ویرایش کاربر 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Security.UserController.DeleteUser(System.Guid)">
+            <summary>
+              حذف کاربر 
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Security.UserController.UpdatePassword(Infrastructure.Models.User.ChangePasswordInputModel)">
+            <summary>
+             ویرایش رمز عبور کاربر مورد نظر
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Security.UserController.ChangeEmailSignature(Infrastructure.Models.User.ChangeEmailSignatureInputModel)">
+            <summary>
+             ویرایش امضای ایمیل کاربر
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Security.UserController.ChangePassword(Infrastructure.Models.User.ChangePasswordInputModel)">
+            <summary>
+             ویرایش رمز عبور کاربر جاری
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Security.UserCustomerController.AddCustomer(BIDashboard.Dtos.User.CustomerInputModel)">
+            <summary>
+                ثبت مشتری جدید 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.UserCustomerController.RegisterCustomer(BIDashboard.Dtos.User.RegisterCustomerInputModel)">
+            <summary>
+                 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.UserGroupController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+             لیست گروه کاربران  
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.UserGroupController.GetUserActionsAccessForUserGroup">
+             <summary>
+            User  یک  Actions, DisciplineIds , UserGroup برگرداندن
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.UserGroupController.GetById(System.Guid)">
+            <summary>
+              برگرداندن یک گروه کاربر 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.UserGroupController.Add(Infrastructure.Models.UserGroupDto)">
+            <summary>
+                ثبت گروه کاربر جدید 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Security.UserGroupController.Update(Infrastructure.Models.UserGroupDto)">
+            <summary>
+              ویرایش گروه کاربر 
+            </summary>
+            <returns></returns>        
+        </member>
+        <member name="M:API.Controllers.Security.UserGroupController.Delete(System.Guid)">
+            <summary>
+              حذف گروه کاربر 
+            </summary>
+            <returns></returns> 
+        </member>
+        <member name="M:API.Controllers.Sms.SmsController.CheckCodeSmSForPhoneNumber(System.String)">
+            <summary>
+                 چک کردن کد ارسالی کاربر برای تایید شماره موبایل
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Sms.SmsController.GetList(Infrastructure.Common.GridQueryModel)">
+            <summary>
+                 Sms Panel
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Sms.SmsController.SendSmsForConfirmPhoneNumber(System.String)">
+            <summary>
+                ارسال پیامک برای کاربر برای شماره موبایل کاربر
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Sms.UserSmsController.SendSmsForRegisterUser(System.String)">
+            <summary>
+                ارسال پیامک برای کاربر برای ثبت نام شماره موبایل کاربر
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Sms.UserSmsController.CheckCodeSmSForRegisterUser(System.String,System.String)">
+            <summary>
+                 چک کردن کد ارسالی کاربر برای ثبت نام کاربر
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Sms.UserSmsController.CheckCodeSmSForActiveUser(System.String,System.String)">
+            <summary>
+                 چک کردن کد ارسالی کاربر برای  فعال سازی کاربر
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Sms.UserSmsController.CheckCodeSmSForForgetPasswordUser(System.String,System.String)">
+            <summary>
+                 چک کردن کد ارسالی کاربر برای ثبت نام کاربر
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Sms.UserSmsController.SendSmsForgetPassword(System.String)">
+            <summary>
+                    ارسال پیامک  برای فراموشی رمز عبور کاربر
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Support.UserOpinionController.GetAll(Infrastructure.Models.FilterUserOpinionDto)">
+            <summary>
+              لیست  دیدگاه کاربران
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Support.UserOpinionController.GetById(System.String)">
+            <summary>
+              برگرداندن  دیدگاه کاربران 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Support.UserOpinionController.GetByProductId(System.Int32)">
+            <summary>
+              برگرداندن  دیدگاه کاربران برای یک محصول 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Support.UserOpinionController.GetByArticleId(System.Int32)">
+            <summary>
+              برگرداندن  دیدگاه کاربران برای یک مقاله 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Support.UserOpinionController.Add(Infrastructure.Models.UserOpinionDto)">
+            <summary>
+                ثبت دیدگاه کاربران
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API.Controllers.Support.UserOpinionController.Update(Infrastructure.Models.UserInputOpinionModel)">
+            <summary>
+              ویرایش دیدگاه کاربران 
+            </summary>
+            <returns></returns>        
+        </member>
+    </members>
+</doc>
