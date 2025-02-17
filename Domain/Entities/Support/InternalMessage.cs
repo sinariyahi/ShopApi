@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Common;
 
 namespace Domain.Entities.Support
 {
@@ -20,7 +21,7 @@ namespace Domain.Entities.Support
         [MaxLength(256)]
         public string ActionLink { get; set; }
         public DateTime SendDate { get; set; }
-     //   public InternalMessageType InternalMessageType { get; set; }
+        public InternalMessageType InternalMessageType { get; set; }
         public bool SendEmail { get; set; }
         public DateTime? VisitedEmailDate { get; set; }
         public DateTime? VisitedFromAppDate { get; set; }
