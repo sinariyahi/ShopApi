@@ -30,9 +30,9 @@ namespace Domain.Entities.Support
 
         [Required, MaxLength(512)]
         public string Remark { get; set; }
-     //   public UserOpinionType UserOpinionType { get; set; }
+        public UserOpinionType UserOpinionType { get; set; }
 
-       // public ShowStatus ShowStatus { get; set; }
+        public ShowStatus ShowStatus { get; set; }
         public DateTime CreateDate { get; set; }
         public int? Score { get; set; }
 
