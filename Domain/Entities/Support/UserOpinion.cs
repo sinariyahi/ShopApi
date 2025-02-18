@@ -8,6 +8,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Common;
 
 namespace Domain.Entities.Support
 {
@@ -54,7 +55,7 @@ namespace Domain.Entities.Support
 
         public virtual UserOpinion UserOpinion { get; set; }
 
-        //public UseOpinionStatus UseOpinionStatus { get; set; }
+        public UseOpinionStatus UseOpinionStatus { get; set; }
         [Required, MaxLength(512)]
         public string Remark { get; set; }
     }
