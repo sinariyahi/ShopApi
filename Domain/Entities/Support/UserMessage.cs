@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Common;
 
 namespace Domain.Entities.Support
 {
@@ -24,7 +25,7 @@ namespace Domain.Entities.Support
         [MaxLength(512)]
         public string CC { get; set; }
         public DateTime SendDate { get; set; }
-     //   public UserMessageType UserMessageType { get; set; }
+        public UserMessageType UserMessageType { get; set; }
         public bool SendEmail { get; set; }
         public bool? Visited { get; set; }
         public DateTime? VisitedEmailDate { get; set; }
