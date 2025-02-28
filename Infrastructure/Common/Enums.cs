@@ -177,21 +177,17 @@ namespace Infrastructure.Common
 
         public enum QuestionEvalutionType
         {
-            //[Display(Name = "Sourcing Inital Evalution")]
             [Display(Name = " Inital Evalution")]
 
             SourcingInitalEvalution = 10,
-            //[Display(Name = "Purchase Order Mid Term Evalution")]
             [Display(Name = "Monthly Evalution")]
 
             PurchaseOrderMidTermEvalution = 20,
 
-            //[Display(Name = "Purchase Order After Warranty Evalution")]
             [Display(Name = "Evalution After Gurantee Period ")]
 
             PurchaseOrderAfterWarrantyEvalution = 30,
 
-            //[Display(Name = "Purchase Order Final Evalution")]
             [Display(Name = "Final Evalution")]
 
             PurchaseOrderFinalEvalution = 40,
@@ -748,16 +744,13 @@ namespace Infrastructure.Common
 
         }
 
-        /// <summary>
-        /// نمایش روند
-        /// </summary>
         public enum ShowTrends
         {
             [Display(Name = "Daily")]
             Daily = 101,
 
-            //[Display(Name = "هفتگی")]
-            //Weekly = 102,
+            [Display(Name = "هفتگی")]
+            Weekly = 102,
 
             [Display(Name = "Monthly")]
             Monthly = 103,
@@ -784,9 +777,6 @@ namespace Infrastructure.Common
             Monthly = 103,
         }
 
-        /// <summary>
-        ///  نحوه محاسبه
-        /// </summary>
         public enum CalcType
         {
             [Display(Name = "Simple")]
@@ -796,10 +786,6 @@ namespace Infrastructure.Common
         }
 
 
-
-        /// <summary>
-        ///   نوع تعداد
-        /// </summary>
         public enum CountType
         {
             [Display(Name = "ثابت")]
@@ -1212,16 +1198,13 @@ namespace Infrastructure.Common
             [Display(Name = "Parametric")]
             Parametric = 2,
 
-            //[Display(Name = "براساس دوره زمانی")]
-            //PerPeriod = 3,
+            [Display(Name = "براساس دوره زمانی")]
+            PerPeriod = 3,
 
-            //[Display(Name = "براساس پروژه")]
-            //PerProject = 4,
+            [Display(Name = "براساس پروژه")]
+            PerProject = 4,
         }
 
-        /// <summary>
-        /// نوع کاربر
-        /// </summary>
         public enum UserType
         {
             [Display(Name = "Customer User")]
