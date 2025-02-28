@@ -459,10 +459,8 @@ namespace Infrastructure.Common
         {
             [Display(Name = "Initial Data Evaluation")]
             InitialDataEvaluation = 1,
-            //[Display(Name = "Virtual Evaluation By The Evaluation Team")]
             [Display(Name = "Pre-Qualification Document")]
             VirtualEvaluationByTheEvaluationTeam = 2,
-            //[Display(Name = "Physical Assessment By The Assessment Team")]
             [Display(Name = "Shop Visit")]
             PhysicalAssessmentByTheAssessmentTeam = 3,
         }
@@ -812,9 +810,6 @@ namespace Infrastructure.Common
 
 
 
-        /// <summary>
-        ///    روش ارسال
-        /// </summary>
         public enum DeliveryType
         {
             [Display(Name = "پست")]
@@ -828,9 +823,6 @@ namespace Infrastructure.Common
 
 
 
-        /// <summary>
-        ///  استان
-        /// </summary>
         public enum Province
         {
             [Display(Name = "آذربایجان شرقی")]
@@ -931,9 +923,6 @@ namespace Infrastructure.Common
 
         }
 
-        /// <summary>
-        ///  نوع المان فرم
-        /// </summary>
         public enum ControlType
         {
             [Display(Name = "Text")]
@@ -944,14 +933,12 @@ namespace Infrastructure.Common
             Switch = 103,
             [Display(Name = "Multi Option")]
             Tag = 104,
-            //[Display(Name = "لیست")]
-            //DropDown= 105,
+            [Display(Name = "List")]
+            DropDown= 105,
         }
 
-        /// <summary>
-        ///  واحد اندازه گیری
-        /// </summary>
-        public enum UnitType //last code:116
+      
+        public enum UnitType 
         {
             [Display(Name = "Percent")]
             Percentage = 101,
@@ -968,8 +955,8 @@ namespace Infrastructure.Common
             [Display(Name = "PersonHour")]
             PersonHour = 105,
 
-            // [Display(Name = "نفر در دسته سابقه")]
-            // PersonPerGroupHistory = 106,
+             [Display(Name = "نفر در دسته سابقه")]
+             PersonPerGroupHistory = 106,
 
             [Display(Name = "Daily")]
             Daily = 107,
@@ -1005,9 +992,7 @@ namespace Infrastructure.Common
             TrueFalse = 117,
         }
 
-        /// <summary>
-        ///    نحوه نمایش
-        /// </summary>
+      
         public enum ShowType
         {
             [Display(Name = "Table")]
@@ -1028,8 +1013,8 @@ namespace Infrastructure.Common
             [Display(Name = "Single Value")]
             SingleValue = 106,
 
-            //[Display(Name = "Runchart")]
-            //Runchart = 107,
+            [Display(Name = "Runchart")]
+            Runchart = 107,
 
             [Display(Name = "Curve")]
             Curve = 108,
@@ -1040,17 +1025,17 @@ namespace Infrastructure.Common
             [Display(Name = "Pareto")]
             Pareto = 110,
 
-            //[Display(Name = "Histogram")]
-            //Histogram = 111,
+            [Display(Name = "Histogram")]
+            Histogram = 111,
 
-            //[Display(Name = "Polar")]
-            //Polar = 112,
+            [Display(Name = "Polar")]
+            Polar = 112,
 
             [Display(Name = "Bullet")]
             Bullet = 113,
 
-            //[Display(Name = "Timeline")]
-            //Timeline = 114,
+            [Display(Name = "Timeline")]
+            Timeline = 114,
 
             [Display(Name = "Circle Progress")]
             CircleProgress = 115,
@@ -1083,9 +1068,7 @@ namespace Infrastructure.Common
             BarCombined = 124,
         }
 
-        /// <summary>
-        /// انواع اندازه های مانیتورها در طراحی داشبورد
-        /// </summary>
+      
         public enum MonitorSize
         {
             LG = 1,
@@ -1095,9 +1078,7 @@ namespace Infrastructure.Common
             XXS = 5
         }
 
-        /// <summary>
-        /// نوع شاخص
-        /// </summary>
+     
         public enum IndexType
         {
             [Display(Name = "Negative")]
@@ -1110,9 +1091,7 @@ namespace Infrastructure.Common
             Neutral = 103,
         }
 
-        /// <summary>
-        /// نوع دستور اس کیو ال
-        /// </summary>
+      
         public enum CommandType
         {
             Select = 1,
@@ -1121,9 +1100,6 @@ namespace Infrastructure.Common
         }
 
 
-        /// <summary>
-        /// جایگاه
-        /// </summary>
         public enum OrganizationLevel
         {
             [Display(Name = "Organization Unit")]
@@ -1139,10 +1115,6 @@ namespace Infrastructure.Common
         }
 
 
-
-        /// <summary>
-        /// نوع داشبورد
-        /// </summary>
         public enum IndexTemplateType
         {
             [Display(Name = "Organization")]
@@ -1164,9 +1136,7 @@ namespace Infrastructure.Common
             ProjectDisciplinePerDiscipline = 6,
         }
 
-        /// <summary>
-        /// فصل های سال
-        /// </summary>
+        
         public enum Season
         {
             [Display(Name = "Spring")]
@@ -1233,9 +1203,7 @@ namespace Infrastructure.Common
             GreaterThanEquals = 5,
         }
 
-        /// <summary>
-        /// نوع معیار سنجش
-        /// </summary>
+       
         public enum OptimalCriteriaType
         {
             [Display(Name = "Fixed")]
