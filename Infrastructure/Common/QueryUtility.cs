@@ -44,9 +44,9 @@ namespace Infrastructure.Common
 
             by = typeof(T).GetPropertyExactName(by);
 
-            //return desc
-            //    ? query.OrderByDescending(o => o.GetType().GetProperty(by).GetValue(o))
-            //    : query.OrderBy(o => o.GetType().GetProperty(by).GetValue(o));
+            return desc
+                ? query.OrderByDescending(o => o.GetType().GetProperty(by).GetValue(o))
+                : query.OrderBy(o => o.GetType().GetProperty(by).GetValue(o));
 
             if (desc)
                 return query.OrderByDescending(o => o.GetType().GetProperty(by).GetValue(o));
@@ -82,12 +82,12 @@ namespace Infrastructure.Common
                     castedPropertyValue = int.Parse(propertyValue);
                 }
 
-                //if (propertyType.BaseType == typeof(ValueType))
-                //{
-                //    @operator = "Equals";
-                //    var tempType = Convert.ChangeType(propertyValue, Enum.GetUnderlyingType(propertyType));
-                //    castedPropertyValue = EnumHelpers.ParseEnum<T>(propertyValue);
-                //}
+                if (propertyType.BaseType == typeof(ValueType))
+                {
+                    @operator = "Equals";
+                    var tempType = Convert.ChangeType(propertyValue, Enum.GetUnderlyingType(propertyType));
+                    castedPropertyValue = EnumHelpers.ParseEnum<T>(propertyValue);
+                }
 
 
                 var parameterExp = Expression.Parameter(typeof(T), "type");
