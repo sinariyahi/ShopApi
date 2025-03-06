@@ -88,8 +88,8 @@ namespace Infrastructure.Common
             format.Alignment = StringAlignment.Center;
             format.LineAlignment = StringAlignment.Center;
             GraphicsPath path = new GraphicsPath();
-            //path.AddString(this.text, font.FontFamily, (int) font.Style, 
-            //    font.Size, rect, format);
+            path.AddString(this.text, font.FontFamily, (int) font.Style, 
+                font.Size, rect, format);
             path.AddString(text, font.FontFamily, (int)font.Style, 25, rect, format);
             float v = 4F;
             PointF[] points =
