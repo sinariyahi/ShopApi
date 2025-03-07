@@ -2,6 +2,7 @@ using Application;
 using Domain;
 using Infrastructure;
 using Infrastructure.Common;
+using Infrastructure.Models.PaymentGateway;
 using Microsoft.Extensions.DependencyInjection;
 using ShopApi.Installers;
 
