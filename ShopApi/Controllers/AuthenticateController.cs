@@ -79,17 +79,17 @@ namespace ShopApi.Controllers
             }
 
             var result = await customerService.RegisterCustomer(model);
-            //if (result.IsSuccess == true)
-            //{
-            //    var loginModel = new LoginDto()
-            //    {
-            //        Password = model.Password,
-            //        UserName = model.UserName
+            if (result.IsSuccess == true)
+            {
+                var loginModel = new LoginDto()
+                {
+                    Password = model.Password,
+                    UserName = model.UserName
 
-            //    };
-            //    var data = await _authenticationService.CustomerLoginAsync(loginModel, ip, browser);
-            //    return Ok(data);
-            //}
+                };
+                var data = await _authenticationService.CustomerLoginAsync(loginModel, ip, browser);
+                return Ok(data);
+            }
             return Ok(result);
         }
 

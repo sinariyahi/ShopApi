@@ -15,7 +15,10 @@ var builder = WebApplication.CreateBuilder(new WebApplicationOptions
 
 builder.Services.AddOptions();
 builder.Services.Configure<Configs>(builder.Configuration.GetSection("Configs"));
-//builder.Services.Configure<PaymentConfigs>(builder.Configuration.GetSection("PaymentConfigs"));
+
+
+
+builder.Services.Configure<PaymentConfigs>(builder.Configuration.GetSection("PaymentConfigs"));
 
 // Add services to the container.
 builder.Services.AddControllers();

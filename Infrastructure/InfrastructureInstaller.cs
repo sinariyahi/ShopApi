@@ -30,7 +30,7 @@ namespace Infrastructure
                     SenderEmail = configs.ConfirmationEmail,
                     // can be optional with no authentication 
                     Account = configs.ConfirmationEmail,
-                    //Password = configs.ConfirmationEmailPassword,
+                    Password = configs.ConfirmationEmailPassword,
                     // enable ssl or tls
                     Security = false,
                 });
