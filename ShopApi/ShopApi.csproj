@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.20" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.7.3" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.7.3" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.7.3" />

@@ -32,7 +32,7 @@ builder.Services.AddInfrastructure();
 builder.Services.AddSwagger();
 builder.Services.AddJWT();
 builder.Services.AddCustomCors();
-//builder.Services.AddControllers().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+builder.Services.AddControllers().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
 #region AutoMapper
 var config = new AutoMapper.MapperConfiguration(cfg =>
