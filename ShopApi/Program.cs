@@ -2,6 +2,7 @@ using Application;
 using Domain;
 using Infrastructure;
 using Infrastructure.Common;
+using Infrastructure.Common.GlobalExceptionHandling;
 using Infrastructure.Models.PaymentGateway;
 using Microsoft.Extensions.DependencyInjection;
 using ShopApi.Installers;
@@ -63,7 +64,7 @@ app.UseCors("ShopAPI");
 
 app.UseAuthentication();
 app.UseAuthorization();
-//app.UseMiddleware<ErrorHandlerMiddleware>();
+app.UseMiddleware<ErrorHandlerMiddleware>();
 
 app.MapControllers();
 

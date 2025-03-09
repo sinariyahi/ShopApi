@@ -38,7 +38,9 @@ namespace ShopApi.Controllers
             {
                 var captchaResult = new ShopActionResult<string>();
                 captchaResult.IsSuccess = false;
-             //   captchaResult.Message = MessagesFA.CaptchaInvalid;
+             
+                
+               // captchaResult.Message = MessagesFA.CaptchaInvalid;
                 return Ok(captchaResult);
             }
             var result = await _authenticationService.CheckUserIsExsits(model.PhoneNumber);
