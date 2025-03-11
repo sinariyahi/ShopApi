@@ -51,7 +51,9 @@ namespace Application.Services.Base
             var result = new ShopActionResult<int>();
             if (await context.ApplicationConfigs.AnyAsync())
             {
-                //Update
+                
+                
+               // Update
                 var item = await context.ApplicationConfigs.FirstOrDefaultAsync();
                 item.ApplicationTitle = model.ApplicationTitle.Replace("\"", "");
                 item.ApplicationTitleEn = model.ApplicationTitleEn != null ? model.ApplicationTitleEn.Replace("\"", "") : null;
