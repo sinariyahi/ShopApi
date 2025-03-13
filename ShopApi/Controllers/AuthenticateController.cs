@@ -40,6 +40,7 @@ namespace ShopApi.Controllers
                 captchaResult.IsSuccess = false;
              
                 
+
                // captchaResult.Message = MessagesFA.CaptchaInvalid;
                 return Ok(captchaResult);
             }
